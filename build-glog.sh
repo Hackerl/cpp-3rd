@@ -8,7 +8,7 @@ set -e
 
 # build
 cd $rootdir/glog; mkdir -p cmake-build; cd cmake-build
-cmake -DCMAKE_INSTALL_PREFIX=$rootdir/output -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE ..; make
+cmake -DCMAKE_INSTALL_PREFIX=$rootdir/output -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON ..; make
 
 # install
 make install
