@@ -1,5 +1,6 @@
 set -e
 
+sh build-gflags.sh
 sh build-glog.sh
 sh build-jsoncpp.sh
 sh build-libpcap.sh
