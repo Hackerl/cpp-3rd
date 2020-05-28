@@ -8,7 +8,7 @@ set -e
 
 # build
 cd $rootdir/curl; mkdir -p cmake-build; cd cmake-build
-cmake -DCMAKE_INSTALL_PREFIX=$rootdir/output -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DBUILD_SHARED_LIBS=OFF ..; make
+cmake -DCMAKE_INSTALL_PREFIX=$rootdir/output -DCMAKE_PREFIX_PATH=$rootdir/output -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DBUILD_SHARED_LIBS=OFF ..; make
 
 # install
 make install
