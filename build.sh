@@ -7,3 +7,5 @@ sh build-libpcap.sh
 sh build-openssl.sh
 sh build-curl.sh
 sh build-minizip.sh
+sh build-libevent.sh
+
